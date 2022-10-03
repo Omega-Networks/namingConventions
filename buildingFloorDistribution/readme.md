@@ -44,7 +44,7 @@ Numbering shall always begin at 0 and increment by 1. The following example desc
 
 <h2>High-Risers and Basements: </h2>
 
-Values are not limited to 1 digit and in the case of basements shall be appended with the letter ‘B’.
+Values are not limited to 1 digit and in the case of basements, they shall be appended with the letter ‘B’.
 
 > - Basement B1 
 >   - Floor Distribution B1.0
