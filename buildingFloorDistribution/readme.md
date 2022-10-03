@@ -1,15 +1,14 @@
 *This file is a work in progress; However, sufficent for early stages of builds.*
 
 
-<h1>a.	Numbering Convention: </h1> 
+<h1>Numbering Convention: </h1> 
 
 <h2>Overview:</h2>
 
 Rack names are made up of 3 numerical values separated by a period. RU units may then be appended with an additional period followed by the RU number.
 
-> 0.1.2 = Ground Floor, Floor Distribution 1, Rack 2
-
-> 0.1.2.42 = Ground Floor, Floor Distribution 1, Rack 2, RU42
+> - 0.1.2 = Ground Floor, Floor Distribution 1, Rack 2
+> - 0.1.2.42 = Ground Floor, Floor Distribution 1, Rack 2, RU42
 
 *Example 1: Rack Numbering Schema*
 
@@ -24,56 +23,53 @@ The example shown identifies the Ground Floor, Floor Distribution 1, Rack 2 (0.1
 
 Numbering shall always begin at 0 and increment by 1. The following example describes a building with multiple floors, floor distribution rooms and racks:
 
-> 0.	Ground Floor
+> - Ground Floor 0
+>    - Floor Distribution 0.0
+>      - Rack 0.0.0 
+>      - Rack 0.0.1
+>      - Rack 0.0.2
+>    - Floor Distribution 0.1
+>      - Rack 0.1.0
+>      - Rack 0.1.1
+> - First Floor
+>   - Floor Distribution 1.0
+>     - Rack 1.0.0
+>     - Rack 1.0.1
+>   - Floor Distribution 1.1
+>     - Rack 1.1.0
+>     - Rack 1.1.1
 
->   0.	Floor Distribution 0.0
-
->     0.	Rack 0.0.0 
-
->     1.	Rack 0.0.1
-
->     2.	Rack 0.0.2
-
-> 1.	Floor Distribution 0.1
-> 0.	Rack 0.1.0
-> 1.	Rack 0.1.1
-> 1.	First Floor
-> 0.	Floor Distribution 1.0
-> 0.	Rack 1.0.0
-> 1.	Rack 1.0.1
-> 1.	Floor Distribution 1.1
-> 0.	Rack 1.1.0
-> 1.	Rack 1.1.1
-
-Example 2. Large Office/Campus Numbering 
+*Example 2. Large Office/Campus Numbering*
 
 
-High-Risers and Basements: 
+<h2>High-Risers and Basements: </h2>
 
 Values are not limited to 1 digit and in the case of basements shall be appended with the letter ‘B’.
 
-	B1. Basement 1 
-0.	Floor Distribution B1.0
-0.	Rack B1.0.0
-1.	Rack B1.0.1
-10. Tenth Floor	
-0.	Floor Distribution 10.0
-0.	Rack 10.0.0
-1.	Rack 10.0.1
-1.	Floor Distribution 10.1.0
-0.	Rack 10.1.0
-1.	Rack 10.1.1
+> - Basement B1 
+>   - Floor Distribution B1.0
+>     - Rack B1.0.0
+>     - Rack B1.0.1
+> - Tenth Floor	10
+>   - Floor Distribution 10.0
+>     - Rack 10.0.0
+>     - Rack 10.0.1
+>   - Floor Distribution 10.1.0
+>     - Rack 10.1.0
+>     - Rack 10.1.1
 
-Example 3. High-Rise and Basement Numbering
+*Example 3. High-Rise and Basement Numbering*
 
 
-b.	Access Floor Distribution Layout:
+<h1>Access Floor Distribution Layout:</h1>
 
-Overview:
+<h2>Overview:</h2>
 
 Each Floor Distribution (FD) location shall have minimum a primary comms rack, this will always be rack ‘0’ within the FD. All inter-riser cabling shall terminate within the primary comms rack. Where possible, all structured ethernet cabling shall terminate within the primary rack. The current design allows for 336 ethernet cables. If further cabling is required, this may spill into the ‘other’ rack. 
 
-Within each FD (space prohibiting), it is advantageous to have a minimum of 3 comms 
+Within each FD (space prohibiting), it is advantageous to have a minimum of 3 comms rooms per FD...
+
+... To be continued
 
 
 
